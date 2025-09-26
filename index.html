@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>聖書記述式クイズ</title>
+<title>啓示録記述式クイズ</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
 
@@ -315,7 +315,7 @@ h1 {
 
   async function loadQuestions() {
     try {
-      const response = await fetch('questions.json', { 
+      const response = await fetch('index.json', { 
         cache: 'no-store',
         headers: {
           'Content-Type': 'application/json'
@@ -523,4 +523,5 @@ h1 {
 })();
 </script>
 </body>
+
 </html>
